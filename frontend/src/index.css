@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 15% 96%; /* Soft light cyan background */
+    --foreground: 220 90% 20%; /* Deep royal blue text */
+
+    --card: 200 35% 95%; /* Light cyan card background */
+    --card-foreground: 230 80% 12%; /* Navy blue card text */
+
+    --popover: 210 25% 98%; /* Very light cyan popover */
+    --popover-foreground: 230 80% 12%; /* Navy blue popover text */
+
+    --primary: 340 85% 55%; /* Electric magenta primary */
+    --primary-foreground: 0 0% 100%; /* Pure white for primary text */
+
+    --secondary: 45 95% 55%; /* Vibrant sunflower yellow */
+    --secondary-foreground: 220 90% 20%; /* Dark blue for secondary text */
+
+    --muted: 215 60% 90%; /* Sky blue muted background */
+    --muted-foreground: 220 50% 35%; /* Medium muted dark blue text */
+
+    --accent: 150 80% 45%; /* Neon green accent */
+    --accent-foreground: 0 0% 100%; /* White for accent text */
+
+    --destructive: 0 85% 65%; /* Bright red */
+    --destructive-foreground: 0 0% 100%; /* White for destructive text */
+
+    --border: 220 30% 85%; /* Light bluish-gray border */
+    --input: 220 30% 85%; /* Light bluish-gray input border */
+    --ring: 340 85% 55%; /* Electric magenta focus ring */
+
+    --radius: 0.6rem; /* Slightly rounder elements */
+  }
+
+  .dark {
+    --background: 230 40% 10%; /* Very dark blue background */
+    --foreground: 0 0% 95%; /* Soft white text */
+
+    --card: 230 40% 12%; /* Very dark blue card */
+    --card-foreground: 0 0% 95%; /* Soft white card text */
+
+    --popover: 230 40% 12%; /* Dark popover */
+    --popover-foreground: 0 0% 95%; /* Soft white popover text */
+
+    --primary: 340 85% 55%; /* Electric magenta primary */
+    --primary-foreground: 0 0% 100%; /* White for primary text */
+
+    --secondary: 45 95% 55%; /* Vibrant sunflower yellow */
+    --secondary-foreground: 0 0% 95%; /* Soft white secondary text */
+
+    --muted: 220 35% 20%; /* Dark muted blue */
+    --muted-foreground: 220 20% 60%; /* Light muted gray text */
+
+    --accent: 150 80% 45%; /* Neon green accent */
+    --accent-foreground: 0 0% 100%; /* White for accent text */
+
+    --destructive: 0 85% 55%; /* Bright red */
+    --destructive-foreground: 0 0% 100%; /* White destructive text */
+
+    --border: 220 40% 35%; /* Dark blue-gray border */
+    --input: 220 40% 35%; /* Dark blue-gray input */
+    --ring: 340 85% 55%; /* Electric magenta focus ring */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
